@@ -26,6 +26,8 @@ import com.ismaeldivita.chipnavigation.ChipNavigationBar
 
 class MainActivity : AppCompatActivity() {
 
+    //Bu branch will be builded without app bar
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var chipNavigation:ChipNavigationBar
