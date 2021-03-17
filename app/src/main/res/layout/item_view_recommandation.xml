@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_view_recommandatio_bakcground"
+    android:padding="6dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/cardView"
+        android:layout_width="120dp"
+        android:background="@drawable/dale"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/author_rec"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Dale Carnegie"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/bookName"
+        app:layout_constraintTop_toBottomOf="@id/bookName" />
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Muvaffaqiyatga erishish va uning usullari"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/category_rec"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:text="Self-taught"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/author_rec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
